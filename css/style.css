@@ -1,0 +1,131 @@
+/* start global rules */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--pale-blue: hsl(225, 100%, 94%);
+	--very-pale-blue: hsl(225, 100%, 98%);
+	--bright-blue: hsl(245, 75%, 52%);
+	--desaturated-blue: hsl(224, 23%, 55%);
+	--dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+	font-size: 16px;
+	font-family: 'Red Hat Display', sans-serif;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* end global rules */
+
+
+/* start work */
+
+body {
+	background: url('../images/pattern-background-mobile.svg') no-repeat center center;
+	background-size: cover;
+}
+
+@media (min-width: 375px) {
+	body {
+		background-image: url('../images/pattern-background-desktop.svg');
+	}
+}
+
+
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 310px;
+}
+
+.box .img img {
+	max-width: 100%;
+	border-radius: 20px 20px 0 0;
+}
+
+.box {
+	background-color: #fff;
+	border-radius: 20px;
+}
+
+.content {
+	padding: 20px;
+}
+
+h1 {
+	font-size: x-large;
+    color: var(--dark-blue);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    color: #666;
+    font-size: small;
+}
+
+.music {
+	display: flex;
+    justify-content: space-between;
+    background: #f5f5f5f5;
+    padding: 20px 10px;
+}
+
+.music button {
+	align-self: center;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    /* margin-top: 20px; */
+    color: #444;
+    font-weight: 600;
+    letter-spacing: -.2px;
+    cursor: pointer;
+}
+
+.btn {
+	display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn button:first-child {
+	width: 99%;
+    padding: 10px 10px;
+    white-space: nowrap;
+    background: var(--bright-blue);
+    color: #fff;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    box-shadow: 0px 5px 5px rgb(0 0 0 / 20%);
+    cursor: pointer;
+}
+
+.btn button:last-child {
+	background: transparent;
+    border: 0;
+    outline: 0;
+    margin-top: 20px;
+    color: #444;
+    font-weight: 600;
+    letter-spacing: -.2px;
+    cursor: pointer;
+}
+
+
+/* end work */
